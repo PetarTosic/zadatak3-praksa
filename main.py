@@ -7,8 +7,8 @@ truck1 = Truck(10, 100000, 2010, 500)
 truck2 = Truck(10, 150000, 2013, 600)
 
 trailer1 = Trailer(4, 50000, 2021, 'container')
-truck1.addRepair('15-02-2023', 'Fixed engine')
-truck1.addTrailer(trailer1)
+addRepair(truck1, '15-02-2023', 'Fixed engine')
+addTrailer(truck1, trailer1)
 
 driver1 = TruckDriver('Marko', 'Markovic','21-02-1993', '281839401', '5 years', 40, 34)
 driver2 = TruckDriver('Miomir', 'Markovic','21-02-1993', '281839401', '5 years', 40, 34)

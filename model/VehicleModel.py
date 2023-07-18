@@ -18,12 +18,6 @@ class Truck(Vehicle):
     self.truckDriver = {}
     self.trailer = {}
   
-  
-
-  def addTrailer(self, trailer: dict):
-    self.trailer = trailer
-    trailer.addTruck = self
-
   def __str__(self)-> str:
     return f'{self.year} Truck with: {self.wheels} wheels and {self.miles} miles.'
 
@@ -38,9 +32,6 @@ class Trailer(Vehicle):
     super().__init__(wheels, miles, year)
     self.type = type
     self.truck = {}
-
-  def addTruck(self, truck: dict):
-    self.truck = truck
 
   def __str__(self)-> str:
     return f'{self.year} Trailer with: {self.wheels} wheels and {self.miles} miles.'

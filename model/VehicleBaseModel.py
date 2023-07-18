@@ -9,13 +9,6 @@ class Vehicle:
     self.year = year
     self.repairs = []
 
-  def addRepair(self, date, description):
-    self.repairs.append(Repair(date, description, self))
-
-  def showRepairs(self):
-    for repair in self.repairs:
-      print(repair)
-
 
 class Repair:
   date: str
